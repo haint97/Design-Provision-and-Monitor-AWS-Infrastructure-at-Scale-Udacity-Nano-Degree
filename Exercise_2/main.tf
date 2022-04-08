@@ -34,7 +34,7 @@ EOF
 
 resource "aws_cloudwatch_log_group" "lambda_log_group" {
   name              = "/aws/lambda/${var.lambda_name}"
-  retention_in_days = 14
+  retention_in_days = 7
 }
 
 
@@ -76,7 +76,7 @@ resource "aws_lambda_function" "geeting_lambda" {
 
   environment{
       variables = {
-          greeting = "Hello World!"
+          greeting = "Hello World From Lambda!"
       }
   }
 
