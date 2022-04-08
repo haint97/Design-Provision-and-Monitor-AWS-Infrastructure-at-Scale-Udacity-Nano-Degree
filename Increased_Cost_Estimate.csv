@@ -1,0 +1,19 @@
+Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+US East (Ohio),Web server,Amazon EC2,0,2729.44,32753.28,USD,"Operating system (Linux), Quantity (10), Pricing strategy (On-Demand Instances), Storage amount (300 GB), Instance type (t3.2xlarge)"
+US East (Ohio),App server,Amazon EC2,0,738,8856,USD,"Operating system (Linux), Quantity (10), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (300 GB), Instance type (m5.large)"
+US East (Ohio),,Amazon RDS for PostgreSQL,0,4250.08,51000.96,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (200 GB per month), Nodes (2), Instance Type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+US East (Ohio),,S3 Standard,0,69,828,USD,S3 Standard storage (3000 GB per month)
+US East (Ohio),,Data Transfer,0,0,0,USD,
+US East (Ohio),,Application Load Balancer,0,2936.43,35237.16,USD,Number of Application Load Balancers (1)
+US East (Ohio),,Network Load Balancer,0,2644.43,31733.16,USD,"Number of Network Load Balancers (1), Average TCP connection duration ( seconds), Average number of new TCP connections (2000 per second), Processed bytes per NLB for TCP (500 GB per hour), Processed bytes per NLB for TLS (100 GB per hour)"
+US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,37.35,448.2,USD,Number of NAT Gateways (1)
+US East (Ohio),,Amazon RDS for PostgreSQL,0,4250.08,51000.96,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (200 GB per month), Nodes (2), Instance Type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+US East (Ohio),,Amazon Route 53,0,938,11256,USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+,,,,,,,
+,,,,18592.81,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,EC2- increased number of instances from total 6 to 10 for the Web Servers and 6 to 10 for the Application Servers,,,
+,,,,RDS - increased number of instances from 1 to 2,,,
+,,,,Application Load Balancer - increased number of processed GB per month (EC2 and IP),,,
